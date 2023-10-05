@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Border</title>
+    <style>
+        .bottom-div {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+
+        .border-line::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px; /* Adjust this value for the thickness of the border */
+            width: 100px; /* Adjust this value for the width of the border */
+            background-color: #000; /* Adjust this color to change the border color */
+        }
+    </style>
+</head>
+<body>
+    <div class="bottom-div">
+        Content goes here
+        <div class="border-line"></div>
+    </div>
+</body>
+</html>
