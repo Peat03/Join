@@ -6,40 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>summary</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="mainDivSum">
         <div class="d-flex navMenu"></div>
+ 
         <div class="overviewSum">
+            <div class="header font">Kanban Project Management Tool</div>
             <img src="assets/images/joinSlogan.svg" alt="">
-            <div class="d-flex toDoDivMain">
-                <div class="toDoDiv">
-                    <img src="assets/images/edit.svg" alt="">
-                    <div>
-                        <div>hello</div>
-                        <div>goodBye</div>
+            <div class="d-flex summaryFrame">
+                <div class="tasksOverview">
+                    <div class="d-flex toDoDivMain">
+                        <div class="toDoDiv">
+                            <img src="assets/images/edit.svg" alt="">
+                            <div>
+                                <div id="numToDos" class="numWorkflow">1</div>
+                                <div class="font">To-do</div>
+                            </div>
+                        </div>
+                        <div class="doneDiv">
+                            <img src="assets/images/ok.svg" alt="">
+                            <div>
+                                <div id="numDone" class="numWorkflow">1</div>
+                                <div class="font">Done</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="doneDiv">
-                    <img src="assets/images/ok.svg" alt="">
-                    <div>
-                        <div>hello</div>
-                        <div>goodBye</div>
+                    <div class="d-flex center">
+                        <div class="d-flex urgentMain">
+                            <div class=" d-flex">
+                                <img class="urgentIcon" src="assets/images/urgent.svg" alt="">
+                                <div class="d-flex center colum ">
+                                    <div id="numUrgent" class="numWorkflow">1</div>
+                                    <div class="font">Urgent</div>
+                                </div>
+                            </div>
+
+                            <div class="verticalLine"></div>
+
+                            <div class="deadLineMain" id="deadLine">
+                                <div id="deadlineDate" class="font deadlineDate">October 16, 2022</div>
+                                <div class="font deadline">Upcoming Deadline</div>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="d-flex progressMain">
+                        <div class="progress">
+                            <div>
+                                <div id="numOfTasks" class="workflowProgress d-flex">1</div>
+                                <div class="font workflowState">Tasks in Board</div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div>
+                                <div id="numInProgress" class="workflowProgress d-flex">2</div>
+                                <div class="font workflowState">Tasks In Progress</div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="center d-flex colum">
+                                <div id="awaitingFeedBack" class="workflowProgress d-flex">1</div>
+                                <div class="font workflowState">awaiting FeedBack</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
-
-
-            </div>
-
-            <div class="d-flex center">
-                <img src="assets/images/urgent.svg" alt="">
-                <div></div>
-
+                <div class="userGreeting">
+                    <div id="greetTime" class="greetTime font">Good morning, </div>
+                    <div id="userGreetName" class="userGreetName font">Peter Schweigkofler</div>
+                </div>
             </div>
 
         </div>
+
+
 
     </div>
 

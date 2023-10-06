@@ -183,6 +183,7 @@ body {
     width: 232px;
     height: 100%;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .mainDivSum {
@@ -191,15 +192,17 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0px;
+    background-color: #F6F7F8;
 }
 
 .overviewSum {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     height: 100vh;
     margin-left: 50px;
+    width: 560px;
 }
 
 .center {
@@ -213,9 +216,9 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
-    border: solid lightgray 1px op;
+    border: solid lightgray 0px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 30px;
     justify-content: space-evenly;
 }
 
@@ -226,17 +229,157 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
-    border: solid lightgray 1px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 30px;
+    border: solid lightgray 0px;
     justify-content: space-evenly;
 }
 
 .toDoDivMain {
-    id="loginButton"
     justify-content: space-between;
-    width: 400px;
+    max-width: 560px;
     gap: 15px;
 }
 
-id="loginButton"
+.numWorkflow {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.8px;
+}
+
+.verticalLine {
+    height: 102.02px;
+    width: 2px;
+    background-color: lightgray;
+}
+
+.deadLineMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.urgentMain {
+    justify-content: center;
+    align-items: center;
+    min-width: 560px;
+    height: 168px;
+    border-radius: 30px;
+    border: solid lightgray 0px;
+    gap: 61px;
+    background-color: white;
+}
+
+.colum {
+    flex-direction: column;
+}
+
+.urgentIcon {
+    width: 130px;
+    height: 96px;
+}
+
+.deadline {}
+
+.deadlineDate {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25.2px;
+    margin-bottom: 15px;
+}
+
+.userGreeting {
+    margin-left: 100px;
+    width: auto;
+    height: 136px;
+    gap: 3px;
+}
+
+.userGreetName {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76.8px;
+    color: #29ABE2;
+    white-space: nowrap;
+}
+
+.greetTime {
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A3647;
+}
+
+.tasksOverview {
+    display: flex;
+    flex-direction: column;
+    height: 562px;
+    width: 560px;
+    justify-content: space-evenly;
+
+}
+
+.workflowProgress {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.8px;
+
+}
+
+.progress {
+    height: 168px;
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid lightgray 0px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.workflowState {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    width: 128px;
+}
+
+.progressMain {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.summaryFrame {
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 96px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+
+
+}
