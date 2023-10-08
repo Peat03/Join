@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/templateStyle.css">
+    <link rel="stylesheet" href="styles/board.css">
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/headerTemplate.html"></div>
+    <div w3-include-html="templates/navTemplate.html"></div>
+
+    <div class="content d-flex colum">
+        <div class=" titleDiv">
+            <div class="mainTitles font">Board</div>
+            <div class="d-flex center searchCreate">
+                <div id="searchbarTask" class="findTaskDiv d-flex center">
+                    <input id="findTaskInput" class="findTaskInput" placeholder="Find Task" type="search">
+                    <div class="horizontalLine"></div>
+                    <img class="search-icon" src="assets/images/search.svg" alt="">
+                </div>
+                <button id="addTaskBtn" class="addTaskBtn font d-flex center">Add Task +</button>
+            </div>
+        </div>
+
+        <div class="boardWorkflow d-flex">
+            <div id="toDoWkfl" class="workflowContent d-flex colum">
+                <div class="workflowTitle font d-flex">To do <img id="plusBtn" class="plusBtn" src="assets/images/plus button.svg" alt=""></div>
+            </div>
+            <div id="inProgressWkfl" class="workflowContent ">
+                <div class="workflowTitle font d-flex">In progress<img id="plusBtn" class="plusBtn" src="assets/images/plus button.svg" alt=""></div>
+            </div>
+            <div id="awaitFeedbackWkfl" class="workflowContent ">
+                <div class="workflowTitle font d-flex"> Await Feedback</div>
+            </div>
+            <div id="doneWkfl" class="workflowContent">
+                <div class="workflowTitle font d-flex"> Done</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

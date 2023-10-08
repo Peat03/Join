@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="styles/templateStyle.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/addTask.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/headerTemplate.html"></div>
+    <div w3-include-html="templates/navTemplate.html"></div>
+    <div class="content">
+        <div class="titleDiv">
+            <div class="mainTitles font">Add Task</div>
+        </div>
+
+        <div class="d-flex taskContent">
+            <div class="d-flex colum addTaskInputMain">
+                <div>
+                    <div class="font taskTitle">Title</div>
+                    <input placeholder="Enter a title" id="inputTitle" class="inputTitle" type="text">
+                </div>
+
+                <div class="mrgBottom-20">
+                    <div id="taskDesc" class="font taskTitle">Description</div>
+                    <textarea class="taskDesc" placeholder="Enter a Description" name="" id="taskDesc" cols="30"
+                        rows="10"></textarea>
+                </div>
+
+                <div>
+                    <div class="font taskTitle">Assigned to</div>
+                    <select class="selectOp bckgrWhite" name="" id="selectOperator">
+                        <option value="">Select contacts to assign</option>
+                        <option value="Anna">Anna</option>
+                        <option value="Nils">Nils</option>
+                        <option value="Peter">Peter</option>
+                    </select>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div class="d-flex colum defineTaskExp">
+                <div>
+                    <div class="taskTitle font">Due date</div>
+                    <input class="inputTitle" type="date">
+                </div>
+                <div>
+                    <div class="taskTitle font ">Prio</div>
+                    <div class="d-flex prioDiv mrgBottom-20">
+                        <button class="prio font" name="" id="prioUrgent">Urgent</button>
+                        <button class="prio font" name="" id="prioMedium">Medium</button>
+                        <button class="prio font" name="" id="prioLow">Low</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="taskTitle font">Category</div>
+                    <select class="selectOp bckgrWhite" name="Select task category" id="taskCategory">
+                        <option value="">Select task category</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div class="taskTitle font">Subtasks</div>
+                    <div class="d-flex plusIcon">                   
+                    <input class="inputTitle" placeholder="Add new subtask" type="text" name="" id="">
+                    <img class="posAbso" src="assets/images/Subtasks PlusIcon.svg" alt="">
+                </div>
+                
+                </div>
+    
+            </div>
+
+           
+
+        </div>
+
+
+
+        <div class="d-flex colum"> </div>
+    </div>
+
+</body>
+
+</html>

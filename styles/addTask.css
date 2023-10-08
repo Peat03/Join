@@ -1,0 +1,89 @@
+.addTaskInputMain {
+    width: 440px;
+    height: 376px;
+    top: 327px;
+    left: 328px;
+    gap: 16px;
+    margin-right: 40px;
+}
+
+.defineTaskExp {
+    width: 440px;
+    height: 416px;
+    top: 327px;
+    left: 864.25px;
+    gap: 24px;
+}
+
+.inputTitle {
+    border-radius: 5px;
+    border: solid 0.5px lightgray;
+    height: 48px;
+    width: 420px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.taskTitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+     
+}
+
+.taskDesc {
+    width: 420px;
+    height: 168px;
+    gap: 8px;
+    border-radius: 5px;
+    border: solid 0.5px lightgray;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.taskContent {
+    margin-top: 63px;
+
+}
+
+.selectOp {
+    border-radius: 5px;
+    border: solid 0.5px lightgray;
+    height: 48px;
+    width: 440px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.line {
+    height: 100vh;
+    width: 1px;
+    background-color: lightgray;
+    margin-right: 40px;
+}
+
+.prio{
+    width: 136px;
+    height: 56px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 0.5px lightgray;
+}
+
+.prioDiv{
+    justify-content: space-between;
+}
+
+.plusIcon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.posAbso{
+    position: absolute;
+}
