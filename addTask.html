@@ -23,18 +23,18 @@
         <div class="d-flex taskContent">
             <div class="d-flex colum addTaskInputMain">
                 <div>
-                    <div class="font taskTitle">Title</div>
+                    <div class="font taskTitle mrgBottom-10">Title</div>
                     <input placeholder="Enter a title" id="inputTitle" class="inputTitle" type="text">
                 </div>
 
                 <div class="mrgBottom-20">
-                    <div id="taskDesc" class="font taskTitle">Description</div>
+                    <div id="taskDesc" class="font taskTitle mrgBottom-10">Description</div>
                     <textarea class="taskDesc" placeholder="Enter a Description" name="" id="taskDesc" cols="30"
                         rows="10"></textarea>
                 </div>
 
                 <div>
-                    <div class="font taskTitle">Assigned to</div>
+                    <div class="font taskTitle mrgBottom-10">Assigned to</div>
                     <select class="selectOp bckgrWhite" name="" id="selectOperator">
                         <option value="">Select contacts to assign</option>
                         <option value="Anna">Anna</option>
@@ -47,29 +47,34 @@
 
             <div class="d-flex colum defineTaskExp">
                 <div>
-                    <div class="taskTitle font">Due date</div>
-                    <input class="inputTitle" type="date">
+                    <div class="taskTitle font mrgBottom-10">Due date</div>
+                    <input class="inputTitle " type="date">
                 </div>
                 <div>
-                    <div class="taskTitle font ">Prio</div>
+                    <div class="taskTitle font mrgBottom-10">Prio</div>
                     <div class="d-flex prioDiv mrgBottom-20">
-                        <button class="prio font" name="" id="prioUrgent">Urgent</button>
-                        <button class="prio font" name="" id="prioMedium">Medium</button>
-                        <button class="prio font" name="" id="prioLow">Low</button>
+                        <button class="prio font d-flex center" name="" id="prioUrgent">Urgent <img class="mrgLeft-5" src="assets/images/Prio alta.svg" alt=""></button>
+                        <button class="prio font" name="" id="prioMedium">Medium <img id="prioMedia" class="mrgLeft-5" src="assets/images/Prio media.svg" alt=""></button>
+                        <button class="prio font" name="" id="prioLow">Low <img id="prioLow" class="mrgLeft-5" src="assets/images/Prio low.svg" alt=""></button>
                     </div>
                 </div>
                 <div>
-                    <div class="taskTitle font">Category</div>
-                    <select class="selectOp bckgrWhite" name="Select task category" id="taskCategory">
+                    <div class="taskTitle font mrgBottom-10">Category</div>
+                    <select class="selectOp bckgrWhite mrgBottom-10" name="Select task category" id="taskCategory">
                         <option value="">Select task category</option>
                     </select>
                 </div>
 
                 <div>
-                    <div class="taskTitle font">Subtasks</div>
+                    <div class="taskTitle font mrgBottom-10">Subtasks</div>
                     <div class="d-flex plusIcon">                   
                     <input class="inputTitle" placeholder="Add new subtask" type="text" name="" id="">
                     <img class="posAbso" src="assets/images/Subtasks PlusIcon.svg" alt="">
+                </div>
+
+                <div class="d-flex clearCreateBtnDiv">
+                    <button class="clearBtn font bckgrWhite">Clear x</button>
+                    <button class="createBtn font">Create Task</button>
                 </div>
                 
                 </div>

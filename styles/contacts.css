@@ -1,0 +1,37 @@
+.addContactsBtn {
+    width: 352px;
+    height: 56px;
+    top: 22.5px;
+    left: 52px;
+    padding: 12px, 0px, 12px, 0px;
+    border-radius: 10px;
+    border: 1px;
+    gap: 16px;
+    background-color: #2A3647;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.sidebar {
+    width: 400px;
+    padding: 32px, 24px, 32px, 24px;
+    overflow-y: scroll;
+    align-items: center;
+    border: solid transparent;
+    box-shadow: 4px 0px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sidbarPos {
+        position: fixed;
+        top: 97px;
+        left: 232px;
+        z-index: 1;
+        height: 100%;
+    }

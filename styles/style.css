@@ -517,6 +517,14 @@ body {
     margin-bottom: 20px;
 }
 
+.mrgLeft-5 {
+    margin-left: 5px;;
+}
+
+.mrgBottom-10{
+    margin-bottom: 10px;
+}
+
 .bckgrWhite {
     background-color: white;
 }

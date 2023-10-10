@@ -20,7 +20,7 @@
     border: solid 0.5px lightgray;
     height: 48px;
     width: 420px;
-    font-weight: 400;
+    taskCon font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     padding-left: 20px;
@@ -30,7 +30,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-     
+
 }
 
 .taskDesc {
@@ -39,12 +39,16 @@
     gap: 8px;
     border-radius: 5px;
     border: solid 0.5px lightgray;
-    padding-left: 20px;
     padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 20px;
 }
 
 .taskContent {
     margin-top: 63px;
+    height: 450px;
 
 }
 
@@ -60,30 +64,65 @@
 }
 
 .line {
-    height: 100vh;
+    height: 100%;
     width: 1px;
     background-color: lightgray;
     margin-right: 40px;
 }
 
-.prio{
+.prio {
     width: 136px;
     height: 56px;
     background-color: white;
     border-radius: 5px;
     border: solid 0.5px lightgray;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-.prioDiv{
+.prioDiv {
     justify-content: space-between;
 }
 
-.plusIcon{
+.plusIcon {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.posAbso{
+.posAbso {
     position: absolute;
+}
+
+.clearCreateBtnDiv {
+    justify-content: flex-end;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.createBtn {
+    width: 183px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #2A3647;
+    color: white;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25.2px;
+}
+
+.clearBtn {
+    width: 183px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 16px;
+    border: solid 1px #2A3647;
+    color: #2A3647;
+    ;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
 }
