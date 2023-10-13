@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <script src="js/storage.js"></script>
+    <script src="js/register.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/templateStyle.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/headerTemplate.html"></div>
+
+    <div class="signUpMain font colum">
+
+        <div class="mainTitles">Sign up</div>
+        <div class="titleUnderline"></div>
+        <form onsubmit="register(); return false" class="d-flex colum singUpForm" action="">
+            <div class="posInputIcon">
+                <input class="signUpInput" placeholder="Name" type="text" name="name" id="name">
+                <img class="lockMailIcon" src="assets/images/person.svg" alt="">
+            </div>
+            <form class="d-flex colum singUpForm" action="">
+                <div class="posInputIcon">
+                    <input class="signUpInput" placeholder="Email" type="text" name="email_signUp" id="email_signUp">
+                    <img class="lockMailIcon" src="assets/images/mail.svg" alt="">
+                </div>
+
+                <form class="d-flex colum singUpForm" action="">
+                    <div class="posInputIcon">
+                        <input class="signUpInput" placeholder="Password" type="text" name="password_signUp" id="password_signUp">
+                        <img class="lockMailIcon" src="assets/images/lock .svg" alt="">
+                    </div>
+                    <form class="d-flex colum singUpForm" action="">
+                        <div class="posInputIcon">
+                            <input class="signUpInput" placeholder="Confirm Password" type="text"
+                                name="password_confirm" id="password_confirm">
+                            <img class="lockMailIcon" src="assets/images/lock .svg" alt="">
+                        </div>
+
+                        <div class="rememberPassword">
+                            <div class="saveCred nowrap">
+                                <input class="checkbox" type="checkbox" id="saveCred" name="saveCred" checked="">
+                                <label class="font rememberMe" for="saveCred">I accept the <a class="privacyLink" href="">Privacy policy</a></label>
+                            </div>
+                        </div>
+                        <div class="loginButtonDiv">
+                            <div>
+                                <button id="registerBtn" class="signUpBtn" onclick="">Sign up</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

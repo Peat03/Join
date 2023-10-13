@@ -20,10 +20,14 @@
     border: solid 0.5px lightgray;
     height: 48px;
     width: 420px;
-    taskCon font-weight: 400;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     padding-left: 20px;
+}
+
+.inputTitle:hover{
+    cursor: pointer;
 }
 
 .taskTitle {
@@ -63,6 +67,10 @@
     padding-left: 20px;
 }
 
+.selectOp:hover{
+    cursor: pointer;
+}
+
 .line {
     height: 100%;
     width: 1px;
@@ -81,6 +89,10 @@
     line-height: 24px;
 }
 
+.prio:hover{
+    cursor: pointer;
+}
+
 .prioDiv {
     justify-content: space-between;
 }
@@ -89,10 +101,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+}
+
+.plusIcon:hover{
+    cursor: pointer;
 }
 
 .posAbso {
     position: absolute;
+    right: 10px;
 }
 
 .clearCreateBtnDiv {
@@ -120,7 +138,6 @@
     padding: 16px;
     border: solid 1px #2A3647;
     color: #2A3647;
-    ;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;

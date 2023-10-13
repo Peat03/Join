@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
+
 <body onload="includeHTML()">
 
     <div w3-include-html="templates/headerTemplate.html"></div>
     <div w3-include-html="templates/navTemplate.html"></div>
+    <div class="contactsMainDiv d-flex ">
+        <div class="sidebar d-flex colum mrgright-60">
+            <button id="addContactsBtn" class="addContactsBtn font center d-flex">Add new contact <img
+                    src="assets/images/person_add.svg" alt=""></button>
+        </div>
+        <div class="d-flex colum">
+        <div class="contactsTitleDiv d-flex mrgTop-100 center">
+            <div class="font contactsTitle">Contacts</div>
+            <div class="contactsHline"></div>
+            <div class="font d-flex center contactsSlogan">Better with a team</div>
+        </div>
+        <div class="mrgTop-100">test</div>
+    </div>
 
-    <div class="sidebar d-flex colum sidbarPos">
-        <button id="addContactsBtn" class="addContactsBtn font center d-flex">Add new contact <img src="assets/images/person_add.svg" alt=""></button></div>
-    
+    </div>
+
+
 
 </body>
+
 </html>

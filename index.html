@@ -9,18 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.conavMenum">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/storage.js"></script>
 </head>
 
 <body>
     <img class="joinLogo" src="assets/images/Capa 2.svg" alt="">
+    <div class="signUp font d-flex center"><div>Not a user?</div><div onclick="signUpForm()" class="signUpBtnInd d-flex center">Sign up</div></div>
     <div class="mainDiv_LogIn">
         <div class="logIn">
             <div class="logInTitle">
                 <img src="assets/images/Log in.svg" alt="">
             </div>
-            <div class="inputMainDiv">
-                <input class="logInInputs" placeholder="Email" type="email" name="Email" id="email_logIn">
-                <input class="logInInputs" placeholder="Password" type="email" name="Email" id="Password">
+            
+
+            <form" class="inputMainDiv">
+                <div class="inputsSubDiv">
+                    <input class="logInInputs" placeholder="Email" type="email" name="Email" id="email_logIn"> <img class="lockMailIcon" src="assets/images/mail.svg" alt="">
+                </div>
+
+                <div class="inputsSubDiv">
+                    <input class="logInInputs" placeholder="Password" type="email" name="Email" id="Password"> <img
+                        class="lockMailIcon" src="assets/images/lock.svg" alt="">
+                </div>
+
                 <div class="rememberPassword">
                     <div class="saveCred">
                         <input class="checkbox" type="checkbox" id="saveCred" name="saveCred" checked="">
@@ -38,7 +49,7 @@
                         <button class="guestLoginButton" onclick="">Guest Log in</button>
                     </div>
                 </div>
-            </div>
+            </form>
 
 
 

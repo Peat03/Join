@@ -16,9 +16,11 @@
     text-align: left;
     color: white;
     margin-top: 20px;
-
 }
 
+.addContactsBtn:hover{
+    cursor: pointer;
+}
 .sidebar {
     width: 400px;
     padding: 32px, 24px, 32px, 24px;
@@ -29,9 +31,49 @@
 }
 
 .sidbarPos {
-        position: fixed;
-        top: 97px;
-        left: 232px;
-        z-index: 1;
-        height: 100%;
-    }
+    position: fixed;
+    top: 97px;
+    left: 232px;
+    z-index: 1;
+    height: 100%;
+}
+
+.contactsMainDiv {
+    position: fixed;
+    top: 97px;
+    left: 232px;
+    z-index: 1;
+    height: 100%;
+    width: 100vh;
+}
+
+.contactsTitle {
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contactsHline {
+    height: 80%;
+    width: 3px;
+    background-color: #29ABE2;
+}
+
+.contactsTitleDiv {
+    width: 569px;
+    height: 73px;
+    top: 206px;
+    left: 743px;
+    gap: 30px;
+}
+
+.contactsSlogan {
+    white-space: nowrap;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}

@@ -12,7 +12,7 @@ body {
     left: 77px
 }
 
-.joinLogo:hover{
+.joinLogo:hover {
     cursor: pointer;
 }
 
@@ -317,6 +317,111 @@ body {
     color: #2A3647;
 }
 
+.signUp {
+    position: absolute;
+    width: 279px;
+    height: 49px;
+    top: 80px;
+    right: 77px;
+    justify-content: space-around;
+}
+
+.signUpMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.singUpForm {
+    width: 422px;
+    height: 326px;
+    gap: 16px;
+    margin-top: 30px
+}
+
+.signUpInput {
+    width: 422px;
+    height: 48px;
+    padding: 12px, 21px, 12px, 21px;
+    border-radius: 10px;
+    border: 1px;
+    gap: 10px;
+    border: solid lightgray 0.5px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+
+}
+
+.posInputIcon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleUnderline {
+    background-color: #29ABE2;
+    height: 3px;
+    width: 140px;
+    margin-top: 20px;
+}
+
+.signUpBtn{
+    width: 126px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #2A3647;
+    color: white;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25.2px;
+    white-space: nowrap;
+    border-width: 0px;
+}
+
+.signUpBtnInd {
+    width: 91px;
+    height: 49px;
+    border-radius: 8px;
+    background-color: #2A3647;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.privacyLink{
+    color:#29ABE2;
+    text-decoration-line: none;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.signUpBtn:hover {
+    cursor: pointer;
+}
+
+.inputsSubDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lockMailIcon {
+    position: absolute;
+    right: 10px;
+}
+
+.lockMailIcon:hover {
+    cursor: pointer;
+}
+
 .tasksOverview {
     display: flex;
     flex-direction: column;
@@ -414,7 +519,7 @@ body {
     font-size: 18px;
 }
 
-.userProfil:hover{
+.userProfil:hover {
     cursor: pointer;
 }
 
@@ -440,12 +545,12 @@ body {
     color: white;
 }
 
-.doneDiv:hover > .overviewIcons{
+.doneDiv:hover>.overviewIcons {
     background-color: white;
 }
 
 
-.doneDiv:hover #doneIcon path{
+.doneDiv:hover #doneIcon path {
     stroke: #2A3647;
 }
 
@@ -455,11 +560,11 @@ body {
     color: white;
 }
 
-.toDoDiv:hover > .overviewIcons{
+.toDoDiv:hover>.overviewIcons {
     background-color: white;
 }
 
-.toDoDiv:hover #toDoSign path{
+.toDoDiv:hover #toDoSign path {
     stroke: #2A3647;
 }
 
@@ -487,9 +592,7 @@ body {
 
 }
 
-.overviewIcons:hover .child{
-
-}
+.overviewIcons:hover .child {}
 
 .editIcon {
     width: 32px;
@@ -509,19 +612,24 @@ body {
     background-color: #2A3647;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
-.mrgBottom-20{
+.mrgright-60 {
+    margin-right: 60px;
+}
+
+.mrgBottom-20 {
     margin-bottom: 20px;
 }
 
 .mrgLeft-5 {
-    margin-left: 5px;;
+    margin-left: 5px;
+    ;
 }
 
-.mrgBottom-10{
+.mrgBottom-10 {
     margin-bottom: 10px;
 }
 
@@ -529,33 +637,34 @@ body {
     background-color: white;
 }
 
-.mrgBottom-30{
+.mrgBottom-30 {
     margin-bottom: 30px;
+}
+
+.mrgTop-100 {
+    margin-top: 100px;
 }
 
 #contactsBtn:hover {
     cursor: pointer;
-    background-color:#091931;
+    background-color: #091931;
 }
 
 #boardBtn:hover {
     cursor: pointer;
-    background-color:#091931;
+    background-color: #091931;
 }
 
 #summaryBtn:hover {
     cursor: pointer;
-    background-color:#091931;
+    background-color: #091931;
 }
 
 #addTaskBtn:hover {
     cursor: pointer;
-    background-color:#091931;
+    background-color: #091931;
 }
 
-#helpIcon:hover{
+#helpIcon:hover {
     cursor: pointer;
 }
-
-
-

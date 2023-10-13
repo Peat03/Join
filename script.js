@@ -27,7 +27,7 @@ function includeHTML() {
   }
 }
 
-document.addEventListener('mousemove', function(e) {
-  console.clear(); // Optional: Clear console on every mousemove event
-  console.log('Mouse X:', e.clientX, 'Mouse Y:', e.clientY);
-});
+//document.addEventListener('mousemove', function(e) {
+ // console.clear(); // Optional: Clear console on every mousemove event
+//console.log('Mouse X:', e.clientX, 'Mouse Y:', e.clientY);
+//});
