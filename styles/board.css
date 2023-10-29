@@ -1,3 +1,11 @@
+body {
+    background-color: #F6F7F8;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
 .addTaskBtn {
     width: 183px;
     height: 56px;
@@ -54,13 +62,16 @@
     width: 352px;
     height: 100%;
     margin-right: 20px;
-    border: solid 1px lightgray;
+
+}
+
+.verticalScroll{
+    overflow-y: scroll;
 }
 
 .workflowTitle {
     position: relative;
     height: 24px;
-    border-bottom: solid lightgray 1px;
     align-items: center;
     font-size: 20px;
     font-weight: 700;
@@ -68,6 +79,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #42526E;
+    margin-bottom: 20px;
 
 }
 
@@ -78,4 +90,82 @@
 
 .plusBtn:hover {
     cursor: pointer;
+}
+
+.toDoTasks {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 24px;
+}
+
+.userStory{
+    border-radius: 8px;
+    width: 113px;
+    height: 27px;
+    padding: 4px, 16px, 4px, 16px;
+    background-color: #0038FF;
+    color: white;
+}
+
+h2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.posRel{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fullSizeTodDo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+}
+
+.taskContent {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.drag-area {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px dashed black;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.drag-area-highlight {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.todo {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
 }

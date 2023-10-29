@@ -1,13 +1,14 @@
 class Task {
-    constructor(title, description, assignedTo, dueDate, prio, category,subtasks, status) {
+    constructor(id, title, description, assignedTo, dueDate, prio, category, status, subtasks) {
+      this.id = id;
       this.title = title;
       this.description = description;
       this.assignedTo = assignedTo;
       this.dueDate = dueDate;
       this.prio = prio;
-      this.category = category;
-      this.subtasks = subtasks;
+      this.category = category;   
       this.status = status;
+      this.subtasks = subtasks;
 
     }
   

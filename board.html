@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/templateStyle.css">
     <link rel="stylesheet" href="styles/board.css">
+    <link rel="preconnect" href="https://fonts.googleapis.conavMenum">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/storage.js"></script>
+
+
 </head>
 
-<body onload="includeHTML()">
-
+<body onload=" init(), includeHTML()">
     <div w3-include-html="templates/headerTemplate.html"></div>
     <div w3-include-html="templates/navTemplate.html"></div>
-
-    <div class="content d-flex colum">
+    <div id="content" class="content d-flex colum">
         <div class=" titleDiv">
             <div class="mainTitles font">Board</div>
             <div class="d-flex center searchCreate">
@@ -30,22 +34,42 @@
             </div>
         </div>
 
+
         <div class="boardWorkflow d-flex">
             <div id="toDoWkfl" class="workflowContent d-flex colum">
-                <div class="workflowTitle font d-flex">To do <img id="plusBtn" class="plusBtn" src="assets/images/plus button.svg" alt=""></div>
+                <div class="workflowTitle font d-flex">To do <img id="plusBtn" class="plusBtn"
+                        src="assets/images/plus button.svg" alt=""></div>
+                <div id="toDoWkflTasks" class="verticalScroll heightWidth100" ondrop="moveTo('open')"
+                    ondragover="allowDrop(event); /* highlight('toDoWkflTasks') */"> </div>
             </div>
-            <div id="inProgressWkfl" class="workflowContent ">
-                <div class="workflowTitle font d-flex">In progress<img id="plusBtn" class="plusBtn" src="assets/images/plus button.svg" alt=""></div>
+            
+                <div id="inProgressWkfl" class="workflowContent ">
+                    <div class="workflowTitle font d-flex">In progress<img id="plusBtn" class="plusBtn"
+                            src="assets/images/plus button.svg" alt=""></div>
+                    <div id="inProgressDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="inProgressWkflTasks" class="verticalScroll d-flex colum heightWidth100"
+                        ondrop="moveTo('inProgress')" ondragover="allowDrop(event); /* highlight('inProgressWkflTasks') */">
+                    </div>
+                </div>
+                <div id="awaitFeedbackWkfl" class="workflowContent ">
+                    <div class="workflowTitle font d-flex"> Await Feedback <img id="plusBtn" class="plusBtn"
+                            src="assets/images/plus button.svg" alt=""></div>
+                    <div id="awaitFeedbackDiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="awaitFeedbackTasks" class="verticalScroll d-flex colum heightWidth100"
+                        ondrop="moveTo('awaitFeedback')"
+                        ondragover="allowDrop(event); /* highlight('inProgressWkflTasks') */"></div>
+                </div>
+                <div id="doneWkfl" class="workflowContent">
+                    <div class="workflowTitle font d-flex"> Done </div>
+                    <div id="doneDiv" class="verticalScroll" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="doneTasks" class="verticalScroll d-flex colum heightWidth100"
+                    ondrop="moveTo('done')"
+                    ondragover="allowDrop(event); /* highlight('inProgressWkflTasks') */"></div>
+                    
+                </div>
             </div>
-            <div id="awaitFeedbackWkfl" class="workflowContent ">
-                <div class="workflowTitle font d-flex"> Await Feedback</div>
-            </div>
-            <div id="doneWkfl" class="workflowContent">
-                <div class="workflowTitle font d-flex"> Done</div>
-            </div>
-        </div>
-    </div>
-
+        
+        <script src="js/board.js"></script>
 
 </body>
 

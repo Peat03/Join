@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles/templateStyle.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/addTask.css">
-    <script src="script.js"></script>
     <script src="js/storage.js"></script>
+    <script src="script.js"></script>
     <script src="js/task.class.js"></script>
-    <script src="js/addTask.js"></script>
+
 
 </head>
 
@@ -23,7 +23,7 @@
         <div class="titleDiv">
             <div class="mainTitles font">Add Task</div>
         </div>
-        <form onsubmit="addTask(event)">
+        <form>
             <div class="d-flex taskContent">
                 <div class="d-flex colum addTaskIn">
                     <div>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div>
-                        <div class="font taskTitle mrgBottom-10">Assigned to</div>
+                        <div class="font taskTitle mrgBottom-10">Adevelopmentssigned to</div>
                         <select required class="selectOp bckgrWhite" name="" id="assignedTo">
                             <option value="">Select contacts to assign</option>
                             <option value="Anna">Anna</option>
@@ -54,11 +54,11 @@
                         <input required id="dueDate" class="inputTitle " type="date">
                     </div>
                     <div>
-                        <div class="taskTitle font mrgBottom-10">Prio</div>
+                        <div class="taskTitlerender font mrgBottom-10">Prio</div>
                         <div class="d-flex prioDiv mrgBottom-20">
                             <button onclick="setPrio(`Urgent`)" class="prio font d-flex center" name=""
-                                id="prioUrgent">Urgent <let tasks = [];img class="mrgLeft-5" src="assets/images/Prio alta.svg"
-                                    alt=""></button>
+                                id="prioUrgent">Urgent <let tasks=[];img class="mrgLeft-5"
+                                    src="assets/images/Prio alta.svg" alt=""></button>
                             <button onclick="setPrio('medium')" class="prio font" name="" id="prioMedium">Medium <img
                                     id="prioMedia" class="mrgLeft-5" src="assets/images/Prio media.svg" alt=""></button>
                             <button onclick="setPrio('low')" class="prio font" name="" id="prioLow">Low <img
@@ -70,10 +70,10 @@
                         <select required class="selectOp bckgrWhite mrgBottom-10" name="Select task category"
                             id="taskCategory">
                             <option value="">choose a category</option>
-                            <option value="">support</option>
-                            <option value="">sales</option>
-                            <option value="">billing</option>
-                            <option value="">development</option>
+                            <option value="support">support</option>
+                            <option value="sales">sales</option>
+                            <option value="billing">billing</option>
+                            <option value="development">development</option>
                         </select>
                     </div>
 
@@ -84,22 +84,16 @@
                             <img class="posAbso" src="assets/images/PlusIcon.svg" alt="">
                         </div>
                         <div class="d-flex clearCreateBtnDiv">
-                            <button class="clearBtn font bckgrWhite">Clear x</button>
-                            <button class="createBtn font">Create Task</button>
+                            <button class="clearBtn font bckgrWhite" onclick="deleteAllTasks()">Clear x</button>
+                            <button onclick="addTask(event)" class="createBtn font">Create Task</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
-
-
-
         <div class="d-flex colum"> </div>
     </div>
-
-  
-
-
+    <script src="js/addTask.js"></script>
 </body>
 
 </html>

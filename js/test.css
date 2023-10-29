@@ -1,0 +1,31 @@
+.width{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 10px;
+    position:absolute;
+    z-index: 10;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.width {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust alpha value for transparency */
+    z-index: 20; /* Make sure the overlay is on top */
+}
